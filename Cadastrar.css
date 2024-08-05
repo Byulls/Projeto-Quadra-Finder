@@ -1,0 +1,31 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    background: #e8f1f2;
+    color: #073f6b;
+    border-radius: 50px;
+    margin: 0;
+}
+
+
+.ctn{
+    text-align: center;
+
+
+}
+
+.largura{
+    
+    border-radius: 100px;
+
+}
+
+.fundo{
+    color: #e8f1f2;
+    background: #073f6b;
+
+}
+
+.teste{
+
+}
