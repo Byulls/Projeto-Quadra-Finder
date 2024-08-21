@@ -4,21 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+    <style>
+        :root {
+            --cor-background: rgb(31, 31, 31);
+            --cor-navbar: rgb(24, 24, 24);
+            --cor-principal: #9b2b90;
+            --cor-secundaria: #682a65;
+        }
+        
+        body {
+            margin: 0;
+            background-color: var(--cor-background);
+            font-family: "Roboto Mono", monospace;
+            color: white;
+            padding: 20px;
+        }
+        
+        .perfil-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        .perfil-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        h1 {
+            color: white;
+            margin: 0;
+        }
+        
+        .perfil-header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        
+        button {
+            background-color: var(--cor-principal);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        
+        button.alugado {
+            background-color: green;
+        }
+        
+        button:hover {
+            background-color: var(--cor-secundaria);
+        }
+        
+        .historico-item {
+            background-color: var(--cor-navbar);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        
+        .historico-item h2, .historico-item p {
+            margin: 0 0 10px;
+        }
+        
+        .historico-item p {
+            font-size: 14px;
+        }
+        
+        .historico-item .resumo-valor {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .historico-item .endereco, .historico-item .avaliacao {
+            margin-top: 5px;
+        }
+        
+        .historico-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .historico-header img {
+            border-radius: 8px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
-    <h1>  Nome do Cliente </h1>
-    <img width="200" height="300" src="https://img.freepik.com/vetores-premium/icone-de-perfil-de-usuario-em-estilo-plano-ilustracao-em-vetor-avatar-membro-em-fundo-isolado-conceito-de-negocio-de-sinal-de-permissao-humana_157943-15752.jpg"/>
-    <button> Meus dados cadastrais </button>
-    <br/> <br/>
-
-    <button> Convidar amigos </button>
-    <br/> <br/>
-    <button> Pagamentos </button>
-    <br/> <br/>
-    <button> Historico de Quadra </button>
-    <br/> <br/>
-    <button> Dados da conta </button>
-    <br/> <br/>
-    <button> Configurações </button>
-    <br/> <br/>
-    
+    <div class="perfil-container">
+        <div class="perfil-header">
+            <img src="https://img.freepik.com/vetores-premium/icone-de-perfil-de-usuario-em-estilo-plano-ilustracao-em-vetor-avatar-membro-em-fundo-isolado-conceito-de-negocio-de-sinal-de-permissao-humana_157943-15752.jpg" alt="Foto de Perfil"/>
+            <h1>Nome do Cliente</h1>
+        </div>
+        <h1>Meus dados cadastrais</h1>
+        <h1>Convidar amigos</h1>
+        <h1>Pagamentos</h1>
+        <h1>Histórico de Quadra</h1>
+        <div class="historico-item">
+            <div class="historico-header">
+                <img src="https://naquadra.com.br/anexos/foto55.jpg" alt="Ginásio Rendenção">
+                <h2>Ginásio Senac</h2>
+            </div>
+            <p>Data: 2024-08-20</p>
+            <p>Hora: 15:00</p>
+            <button class="alugado">Alugado</button>
+            <p class="resumo-valor">Valor Total: R$ 100,00</p>
+            <p class="resumo-valor">Pago pelo app: Cartão de Crédito</p>
+            <p class="endereco">Endereço: Rua Episcopal , 700, Bairro Centro</p>
+            <p class="avaliacao">Avaliação: 5.5/5</p>
+        </div>
+        <div class="historico-item">
+            <div class="historico-header">
+                <img src="https://th.bing.com/th/id/OIP.XHtfQNN6rGWiZa0MuV_sngAAAA?rs=1&pid=ImgDetMain" alt="Quadra Poliesportiva">
+                <h2>Ginásio Douradinho</h2>
+            </div>
+            <p>Data: 2024-08-20</p>
+            <p>Hora: 15:00</p>
+            <button class="alugado">Alugado</button>
+            <p class="resumo-valor">Valor Total: R$ 200,00</p>
+            <p class="resumo-valor">Pago pelo app: Pix</p>
+            <p class="endereco">Endereço: Rua Travessa Orquídea Reis Ortega , 123, Bairro Parque Douradinho</p>
+            <p class="avaliacao">Avaliação: 4.5/5</p>
+                
